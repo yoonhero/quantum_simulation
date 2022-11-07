@@ -41,6 +41,14 @@ $R_{nl}(r) = \sqrt{\Big(\frac{2}{n a_0}\Big)^3 \frac{(n-l-1)!}{2n (n+l)!}} e^{-r
 
         수소 원자에서는 방위 양자수는 오비탈의 에너지 준위에 영향을 미치지 않으나, 다전자 원자에서는 방위 양자수도 오비탈의 에너지 준위를 결정한다.
 
+        -   각운동량
+
+            각운동량(L)은 중심을 중심으로 얼마간의 거리를 가지고 회전하는 물체가 가지는 운동량이다.
+
+            ![L](https://mblogthumb-phinf.pstatic.net/MjAxODExMTVfMjM1/MDAxNTQyMjQ0Njg1OTQ1.GsrcZfDQRePDTrkAEzqBDsl39_SfJlKxzV_S56xC94cg.TX81GY5cZ5c75k0Dd3XHi22lmNwq6zjQTirvQHzWhVUg.PNG.falcon2026/image.png?type=w800)
+
+            ![v](https://mblogthumb-phinf.pstatic.net/MjAxODExMTVfMTU3/MDAxNTQyMjQ0NjIwNzg0.RJRUCrCtvkZFZevOOsHkQ4FI59MSRWuqBS3BZ1-wzSMg.m8NvC4m1PWKIfdZho-5JNivQ-nUsK4xFOTTzzxzsDo4g.PNG.falcon2026/image_6221123001542244607021.png?type=w800)
+
     -   자기 양자수
 
         m으로 나타낸다. -l−l에서 +l+l까지의 정수 값을 갖는다. 궤도의 방향을 결정하는 양자수이다.
