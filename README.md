@@ -1,5 +1,13 @@
 # 입자 모형 시뮬레이션
 
+<strong>오비탈모형 구현 모습</strong>
+
+![orbital](https://github.com/yoonhero/quantum_simulation/blob/master/orbital.gif?raw=true)
+
+<strong>러더포드모형 구현 모습</strong>
+
+![rutherford](https://github.com/yoonhero/quantum_simulation/blob/master/docs/rutherford.png?raw=true)
+
 ## 역사
 
 1808년 돌턴은 원자를 더 이상 쪼갤 수 없는 입자의 최소 단위로 하는 원자론을 발표한다. 하지만 이후 톰슨이 음극선관 실험을 통해 전자의 존재를 알아냈다. 그는 원자가 양전하 구름에 음전하를 띤 전자들이 무질서하게 박혀있는 건포도 푸딩모형일 것이라 제안하였다. 1911년, 영국의 과학자 러더퍼드는 톰슨의 원자모형을 입증하기 위한 실험을 했으나 예상과 다른 결과를 얻게 된다. 그는 실험을 통해 원자핵의 존재를 알아내게 된다.
@@ -99,6 +107,8 @@ $R_{nl}(r) = \sqrt{\Big(\frac{2}{n a_0}\Big)^3 \frac{(n-l-1)!}{2n (n+l)!}} e^{-r
 
     오비탈 이론이 정립되고, 화학자들은 이를 바탕으로 어떻게 원자들이 결합하여 분자를 형성하는지 설명하고 하였다. 가장 직관적인 설명은 원자가 결합 이론(valence bond(VB) theory)이다. VB이론의 기본 원리는 두 원자의 궤도함수가 겹치고 한 쌍의 전자가 그 겹친 영역을 차지 할 때 공유 결합이 형성된다는 것이다.
 
+=> orbital.py 에 구현되어 있습니다!
+
 ## 러더퍼드 원자 모형
 
 -   이론적 배경
@@ -123,3 +133,5 @@ $R_{nl}(r) = \sqrt{\Big(\frac{2}{n a_0}\Big)^3 \frac{(n-l-1)!}{2n (n+l)!}} e^{-r
     -   초기값
 
         ![initial](https://github.com/yoonhero/quantum_simulation/blob/master/docs/initial_im.png?raw=true)
+
+=> rutherford.py 에 구현되어 있습니다!!

@@ -1,7 +1,6 @@
 from vpython import *
 
 # Defining Display
-
 scene2 = canvas(width=500,height=500,background = vector(1,1,1))
 
 # Defining Constants
@@ -51,36 +50,44 @@ class Electron():
         # self.electron.trail.append(pos = self.electron.pos)
 
 
-# class Atom():
-#     def __init__(self, shells, electrons):
-#         self.max_electrons = [2, 8, 18, 32]
-#         self.shells = [[]] * shells
+class Atom():
+    def __init__(self, shells, electrons):
+        self.max_electrons = [2, 8, 18, 32]
+        self.shells = [[]] * shells
+        self.timedelay = [7.963903871003342e-17, 7.963903871003342e-17*2]
 
-#         t = 0
-#         for i in range(electrons):
-#             if sum(self.max_electrons[0:t+1]) > i+1:
-#                 t += 1
-#             shells[i] = Electron(a0)
+        t = 0
+        for i in range(electrons):
+            if sum(self.max_electrons[0:t+1]) < i+1:
+                t += 1
+            temp_e = Electron(a0)
+
+            self.shells[t].append(temp_e)
+
+    def update(self, pos, charge):
+        for shell in self.shells:
+            for electron in shell:
+                electron.update(pos, charge)
+    
 
 
-# class Hydrogen(Atom):
+class Hydrogen(Atom):
+    def __init__(self):
+        super().__init__(1, 1)
+
+class Helium(Atom):
+    def __init__(self):
+        super().__init__(1, 2)
 
 
 
-electron1 = Electron(a0)
-electron2 = Electron(a0)
+hydrogen = Hydrogen()
+# helium = Helium()
 
-t = 0
-t_end = 1000*electron1.T_orbit
-
-#Updating Position of Electron in loop
-while (t<t_end):
+while True:
     rate(100)
 
-    t = t+electron1.dt
-
-    electron1.update(nucleus.pos, nucleus.charge)
-    if t>7.963903871003342e-17:
-        electron2.update(nucleus.pos, nucleus.charge)
+    hydrogen.update(nucleus.pos, nucleus.charge)
+    
 
   
