@@ -98,3 +98,28 @@ $R_{nl}(r) = \sqrt{\Big(\frac{2}{n a_0}\Big)^3 \frac{(n-l-1)!}{2n (n+l)!}} e^{-r
 -   혼성 오비탈 모형
 
     오비탈 이론이 정립되고, 화학자들은 이를 바탕으로 어떻게 원자들이 결합하여 분자를 형성하는지 설명하고 하였다. 가장 직관적인 설명은 원자가 결합 이론(valence bond(VB) theory)이다. VB이론의 기본 원리는 두 원자의 궤도함수가 겹치고 한 쌍의 전자가 그 겹친 영역을 차지 할 때 공유 결합이 형성된다는 것이다.
+
+## 러더퍼드 원자 모형
+
+-   이론적 배경
+
+    -   쿨룽의 법칙
+
+        ![coulomb](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2013%2F6%2F30%2Fhijz0li5ivlsj4.jpg%22&type=w2)
+
+        같은 종류의 전하 사이에는 척력이 다른 종류의 전하 사이에는 인력이 작용한다.
+        두 대전체 사이에 작용하는 전기력 F는 대전체 사이의 거리 r의 제곱에 반비례하고 전하량 q1, q2의 곱에 비례한다.
+
+-   원자 모형
+
+    ![atom](https://github.com/yoonhero/quantum_simulation/blob/master/docs/im1.png?raw=true)
+
+    -   위치 계산법
+
+        ![calcpos](https://github.com/yoonhero/quantum_simulation/blob/master/docs/update_pos_im.png?raw=true)
+
+        가속도를 업데이트 -> 가속도를 적분하여 속도를 업데이트 -> 속도를 적분하여 위치를 알아낸다.
+
+    -   초기값
+
+        ![initial](https://github.com/yoonhero/quantum_simulation/blob/master/docs/initial_im.png?raw=true)
